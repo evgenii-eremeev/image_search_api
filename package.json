@@ -1,0 +1,28 @@
+{
+  "name": "url_shortener",
+  "version": "1.0.0",
+  "description": "URL Shortener Microservice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaycrypto/url_shortener.git"
+  },
+  "keywords": [
+    "url",
+    "shortener",
+    "freecodecamp"
+  ],
+  "author": "jay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaycrypto/url_shortener/issues"
+  },
+  "homepage": "https://github.com/jaycrypto/url_shortener#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
