@@ -5,17 +5,18 @@ User stories:
 
 Example creation usage:
 
-https://shurli.herokuapp.com/new/https://www.google.com 
+https://url-shortener-jaycrypto.c9users.io/new/https://www.google.com 
 
-https://shurli.herokuapp.com/new/http://freecodecamp.com/news
+https://url-shortener-jaycrypto.c9users.io/new/http://freecodecamp.com/news
 
 Example creation output:
 
-{ "original_url": "http://freecodecamp.com/news", "short_url": "https://shurli.herokuapp.com/4" }
+{ original_url: "http://freecodecamp.com/news", short_url: "https://url-shortener-jaycrypto.c9users.io/1" }
 
 Usage:
 
-https://shurli.herokuapp.com/4
+https://url-shortener-jaycrypto.c9users.io/1
+
 
 Will redirect to:
 
