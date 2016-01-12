@@ -1,23 +1,8 @@
-# URL Shortener
-User stories:
-- I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
-- When I visit that shortened URL, it will redirect me to my original link.
+# Image Search Abstraction Layer
+### Here are the specific user stories implemented:
 
-Example creation usage:
+- User Story: I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+- User Story: I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+- User Story: I can get a list of the most recently submitted search strings.
 
-https://url-shortener-jaycrypto.c9users.io/new/https://www.google.com 
-
-https://url-shortener-jaycrypto.c9users.io/new/http://freecodecamp.com/news
-
-Example creation output:
-
-{ original_url: "http://freecodecamp.com/news", short_url: "https://url-shortener-jaycrypto.c9users.io/1" }
-
-Usage:
-
-https://url-shortener-jaycrypto.c9users.io/1
-
-
-Will redirect to:
-
-http://freecodecamp.com/news
+Try: https://image-search-api-jaycrypto.c9users.io

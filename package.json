@@ -1,7 +1,7 @@
 {
-  "name": "url_shortener",
+  "name": "image_search_api",
   "version": "1.0.0",
-  "description": "URL Shortener Microservice",
+  "description": "Image Search Abstraction Layer",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,21 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaycrypto/url_shortener.git"
+    "url": "git+https://github.com/jaycrypto/image_search_api.git"
   },
   "keywords": [
-    "url",
-    "shortener",
+    "image",
+    "search",
     "freecodecamp"
   ],
   "author": "jay",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jaycrypto/url_shortener/issues"
+    "url": "https://github.com/jaycrypto/image_search_api/issues"
   },
-  "homepage": "https://github.com/jaycrypto/url_shortener#readme",
+  "homepage": "https://github.com/jaycrypto/image_search_api#readme",
   "dependencies": {
-    "express": "^4.13.3",
-    "mongoose": "^4.3.4"
+    "express": "~4.13.3",
+    "mongoose": "~4.3.4"
   }
 }
