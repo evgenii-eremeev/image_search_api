@@ -1,8 +1,6 @@
 var request = require('request');
 var url = require('url');
 
-require('dotenv').config({path: '../../.env'});
-
 function bingImageRequest(keywords, offset, callback) {
     var bingKey = process.env.BING_KEY;
     var keyBase64 = new Buffer(':' + bingKey).toString('base64');
@@ -17,7 +15,6 @@ function bingImageRequest(keywords, offset, callback) {
                 '&Query=%27' + keywords + '%27'
     });
      
-    console.log(queryUrl);
     var options = {
       url: queryUrl,
       headers: {
@@ -25,7 +22,6 @@ function bingImageRequest(keywords, offset, callback) {
         'Authorization': 'Basic ' + keyBase64
       }
     };
-     
     
     request(options, function (error, response, body) {
         if (error) {
@@ -37,7 +33,6 @@ function bingImageRequest(keywords, offset, callback) {
         } else {
             console.log('Error:', response.statusCode);
         }
-    
     });
 }
 
