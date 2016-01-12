@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/jaycrypto/image_search_api#readme",
   "dependencies": {
+    "dotenv": "^1.2.0",
     "express": "~4.13.3",
     "mongoose": "~4.3.4"
   }
