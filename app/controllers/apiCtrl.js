@@ -27,6 +27,15 @@ function Api() {
         });
     }; // end .imageSearch
     
+    this.recent = function (req, res) {
+        Query.find({}, {term: true, when: true, _id: false})
+             .limit(25)
+             .sort({ when: -1 })
+             .exec(function (err, data) {
+                 if (err) throw err;
+                 res.json(data);
+             });
+    }; // end recent
 }
 
 module.exports = Api;

@@ -21,6 +21,8 @@ app.get('/api/imagesearch/', function(req, res) {
 
 app.get('/api/imagesearch/:keywords', apiCtrl.imageSearch);
 
+app.get('/api/recent', apiCtrl.recent);
+
 
 var port = process.env.PORT || 8080;
 app.listen(port, function () {
