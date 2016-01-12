@@ -10,7 +10,7 @@ function bingImageRequest(keywords, offset, callback) {
         host: 'api.datamarket.azure.com',
         pathname: 'Bing/Search/Image',
         search: '?$format=json' +
-                '&$top=10' + 
+                '&$top=' + offset +
                 '&$skip=0' + 
                 '&Query=%27' + keywords + '%27'
     });

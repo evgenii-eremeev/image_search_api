@@ -15,6 +15,10 @@ app.get('/', function(req, res) {
     res.sendFile(process.cwd() + '/public/index.html');
 });
 
+app.get('/api/imagesearch/', function(req, res) {
+    res.send('Input your keywords in the url after /api/imagesearch/');
+});
+
 app.get('/api/imagesearch/:keywords', apiCtrl.imageSearch);
 
 
