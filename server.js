@@ -7,7 +7,7 @@ require('dotenv').load();
 
 var app = express();
 
-//mongoose.connect('mongodb://localhost:27017/shorts');
+mongoose.connect('mongodb://localhost:27017/search');
 
 var apiCtrl = new ApiCtrl();
 

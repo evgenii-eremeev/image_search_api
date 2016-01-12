@@ -1,11 +1,17 @@
 'use strict';
 
 var bingImageRequest = require(process.cwd() + '/app/utils/bingImageRequest.js');
-
+var Query = require(process.cwd() + '/app/models/query.js');
 
 function Api() {
+
     this.imageSearch = function(req, res) {
         var keywords = req.params.keywords;
+        var query = new Query({
+            term: keywords
+        });
+        query.save();
+        
         var offset = +req.query.offset || 10;
         bingImageRequest(keywords, offset, function (error, request, body) {
             var results = JSON.parse(body).d.results;
@@ -19,7 +25,8 @@ function Api() {
             });
             res.send(pics); 
         });
-    };
+    }; // end .imageSearch
+    
 }
 
 module.exports = Api;
